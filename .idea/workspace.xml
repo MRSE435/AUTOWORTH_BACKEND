@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93ac9d36-091f-4769-ad68-4580bedd2005" name="Changes" comment="exported the linearergession pipeline and tested the pipeline through flask route">
+    <list default="true" id="93ac9d36-091f-4769-ad68-4580bedd2005" name="Changes" comment="Trained and exported lasso and ridge regression model pipelines">
+      <change afterPath="$PROJECT_DIR$/lasssomodel.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ridgemodel.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_testing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randommodel.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/randommodel.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +29,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MRSE435"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MRSE435&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/MRSE435/AUTOWORTH_BACKEND.git&quot;,
@@ -44,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3950241219055872" />
-      <entry key="MS500" value="1.9649752288191875" />
-      <entry key="S2" value="2.970638778247073" />
-      <entry key="S5" value="3.5066786032555983" />
-      <entry key="S10" value="3.737633591416391" />
-      <entry key="S30" value="4.1479896591668535" />
-      <entry key="S60" value="5.14546525975279" />
-      <entry key="M2" value="6.757789141784449" />
-      <entry key="M5" value="11.919880468524834" />
-      <entry key="M10" value="23.19161541193115" />
-      <entry key="M15" value="33.8819627042962" />
-      <entry key="M30" value="68.26527942183446" />
-      <entry key="H1" value="152.0387246999673" />
-      <entry key="H2" value="313.42066630757967" />
-      <entry key="H4" value="538.7714446911928" />
-      <entry key="D1" value="1030.9502277014515" />
-      <entry key="W1" value="1185.789734443167" />
+      <entry key="MS100" value="1.0000026057108025" />
+      <entry key="MS500" value="1.0878531868553294" />
+      <entry key="S2" value="1.8527997983555862" />
+      <entry key="S5" value="2.412739128094033" />
+      <entry key="S10" value="2.6790272340180135" />
+      <entry key="S30" value="2.8895760700318833" />
+      <entry key="S60" value="3.000008884779703" />
+      <entry key="M2" value="3.2325686060632663" />
+      <entry key="M5" value="5.470995080576191" />
+      <entry key="M10" value="14.136270333072842" />
+      <entry key="M15" value="24.16973023550472" />
+      <entry key="M30" value="51.72038077402048" />
+      <entry key="H1" value="105.24418522175029" />
+      <entry key="H2" value="233.58804045776523" />
+      <entry key="H4" value="465.6994525303985" />
+      <entry key="D1" value="1085.6188894666882" />
+      <entry key="W1" value="1300.614910033162" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.231030552901658E-280" />
-      <entry key="MS500" value="1.0424466387916372E-56" />
-      <entry key="S2" value="1.0315188398196317E-14" />
-      <entry key="S5" value="3.2757436712166435E-6" />
-      <entry key="S10" value="0.002979080007617813" />
-      <entry key="S30" value="0.3446992542444789" />
-      <entry key="S60" value="1.167456461344784" />
-      <entry key="M2" value="2.205239529880285" />
-      <entry key="M5" value="3.8419319988831346" />
-      <entry key="M10" value="5.418251956125112" />
-      <entry key="M15" value="6.392441896871393" />
-      <entry key="M30" value="8.716053240033368" />
-      <entry key="H1" value="15.25925256274258" />
-      <entry key="H2" value="28.475566276520823" />
-      <entry key="H4" value="45.16945376386469" />
-      <entry key="D1" value="76.39706477767474" />
-      <entry key="W1" value="85.3441438536122" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="5.492648056374269E-146" />
+      <entry key="S5" value="7.868876132280469E-59" />
+      <entry key="S10" value="8.870668595027358E-30" />
+      <entry key="S30" value="2.0700720019323425E-10" />
+      <entry key="S60" value="1.438780106399494E-5" />
+      <entry key="M2" value="0.003800619890487274" />
+      <entry key="M5" value="0.1166198175273998" />
+      <entry key="M10" value="0.43519900196518124" />
+      <entry key="M15" value="0.7448998752880007" />
+      <entry key="M30" value="1.6826889102588964" />
+      <entry key="H1" value="4.842009846590578" />
+      <entry key="H2" value="14.743002513300372" />
+      <entry key="H4" value="32.39993691677194" />
+      <entry key="D1" value="74.18911373617448" />
+      <entry key="W1" value="87.48901974233067" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7397704802953728" />
-      <entry key="MS500" value="1.6115098879864003" />
-      <entry key="S2" value="2.789769471425244" />
-      <entry key="S5" value="3.413560089644592" />
-      <entry key="S10" value="3.688896407655626" />
-      <entry key="S30" value="4.4487168304442175" />
-      <entry key="S60" value="6.258536930420017" />
-      <entry key="M2" value="8.912993011812155" />
-      <entry key="M5" value="15.715066840989305" />
-      <entry key="M10" value="28.56736707732001" />
-      <entry key="M15" value="40.23725013832604" />
-      <entry key="M30" value="76.95309487470725" />
-      <entry key="H1" value="167.2740948991859" />
-      <entry key="H2" value="341.8745065404137" />
-      <entry key="H4" value="583.9226508261544" />
-      <entry key="D1" value="1107.341446251509" />
-      <entry key="W1" value="1271.1329170605698" />
+      <entry key="MS100" value="0.7845861852168665" />
+      <entry key="MS500" value="1.036117584969813" />
+      <entry key="S2" value="1.827105888170594" />
+      <entry key="S5" value="2.398300552873865" />
+      <entry key="S10" value="2.6707851840927335" />
+      <entry key="S30" value="2.886533402861116" />
+      <entry key="S60" value="2.9982501850046237" />
+      <entry key="M2" value="3.235040516355119" />
+      <entry key="M5" value="5.585679735020993" />
+      <entry key="M10" value="14.568023831848475" />
+      <entry key="M15" value="24.91048124479095" />
+      <entry key="M30" value="53.3980664301188" />
+      <entry key="H1" value="110.07880854713764" />
+      <entry key="H2" value="248.3198673101592" />
+      <entry key="H4" value="498.0864039884543" />
+      <entry key="D1" value="1159.8023724161214" />
+      <entry key="W1" value="1388.1029521308026" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -160,7 +163,9 @@
       <workItem from="1783080401337" duration="8927000" />
       <workItem from="1783133853703" duration="3626000" />
       <workItem from="1783180092394" duration="3091000" />
-      <workItem from="1783263062828" duration="2690000" />
+      <workItem from="1783263062828" duration="3550000" />
+      <workItem from="1783512727873" duration="11845000" />
+      <workItem from="1783616378144" duration="285000" />
     </task>
     <task id="LOCAL-00001" summary="exported the linearergession pipeline and tested the pipeline through flask route">
       <option name="closed" value="true" />
@@ -178,7 +183,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exported the linearergession pipeline and tested the pipeline through flask route" />
-    <option name="LAST_COMMIT_MESSAGE" value="exported the linearergession pipeline and tested the pipeline through flask route" />
+    <MESSAGE value="Trained and exported lasso and ridge regression model pipelines" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trained and exported lasso and ridge regression model pipelines" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
