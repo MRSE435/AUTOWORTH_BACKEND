@@ -5,7 +5,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-pipeline = joblib.load('linearmodel.pkl')
+pipeline = joblib.load('xgboostmodel_tuned.pkl')
 @app.route('/')
 def hello_world():  # put application's code here
     return 'Hello World!'
@@ -21,5 +21,13 @@ def predict():
 
     return jsonify({'predicted_price': round(float(price), 2)})
 
+
+
+@app.route("/chart-data")
+def chart_data():
+    df = pd.read_csv("car.csv")
+    data = df[["km_driven", "selling_price"]].sample(500,random_state=42).to_dict(orient="records")
+
+    return jsonify(data)
 if __name__ == '__main__':
     app.run()
