@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ac9d36-091f-4769-ad68-4580bedd2005" name="Changes" comment="Trained and exported lasso and ridge regression model pipelines">
-      <change afterPath="$PROJECT_DIR$/lasssomodel.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ridgemodel.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_testing.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/randommodel.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/randommodel.pkl" afterDir="false" />
@@ -47,61 +45,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000026057108025" />
-      <entry key="MS500" value="1.0878531868553294" />
-      <entry key="S2" value="1.8527997983555862" />
-      <entry key="S5" value="2.412739128094033" />
-      <entry key="S10" value="2.6790272340180135" />
-      <entry key="S30" value="2.8895760700318833" />
-      <entry key="S60" value="3.000008884779703" />
-      <entry key="M2" value="3.2325686060632663" />
-      <entry key="M5" value="5.470995080576191" />
-      <entry key="M10" value="14.136270333072842" />
-      <entry key="M15" value="24.16973023550472" />
-      <entry key="M30" value="51.72038077402048" />
-      <entry key="H1" value="105.24418522175029" />
-      <entry key="H2" value="233.58804045776523" />
-      <entry key="H4" value="465.6994525303985" />
-      <entry key="D1" value="1085.6188894666882" />
-      <entry key="W1" value="1300.614910033162" />
+      <entry key="MS100" value="1.064744047773165" />
+      <entry key="MS500" value="1.711788851519363" />
+      <entry key="S2" value="2.9785883294247726" />
+      <entry key="S5" value="4.9293056601478575" />
+      <entry key="S10" value="6.6690095686774695" />
+      <entry key="S30" value="8.627813740667172" />
+      <entry key="S60" value="9.273990050807061" />
+      <entry key="M2" value="9.68609145329996" />
+      <entry key="M5" value="11.296816903055532" />
+      <entry key="M10" value="16.993507443956222" />
+      <entry key="M15" value="24.939892293509974" />
+      <entry key="M30" value="50.60151534492996" />
+      <entry key="H1" value="103.26951282337743" />
+      <entry key="H2" value="229.44766657656487" />
+      <entry key="H4" value="461.42169423289806" />
+      <entry key="D1" value="1093.0434633049774" />
+      <entry key="W1" value="1314.315481888232" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="5.492648056374269E-146" />
-      <entry key="S5" value="7.868876132280469E-59" />
-      <entry key="S10" value="8.870668595027358E-30" />
-      <entry key="S30" value="2.0700720019323425E-10" />
-      <entry key="S60" value="1.438780106399494E-5" />
-      <entry key="M2" value="0.003800619890487274" />
-      <entry key="M5" value="0.1166198175273998" />
-      <entry key="M10" value="0.43519900196518124" />
-      <entry key="M15" value="0.7448998752880007" />
-      <entry key="M30" value="1.6826889102588964" />
-      <entry key="H1" value="4.842009846590578" />
-      <entry key="H2" value="14.743002513300372" />
-      <entry key="H4" value="32.39993691677194" />
-      <entry key="D1" value="74.18911373617448" />
-      <entry key="W1" value="87.48901974233067" />
+      <entry key="S2" value="2.5216791604417665E-92" />
+      <entry key="S5" value="2.294435913211382E-37" />
+      <entry key="S10" value="4.790027049204817E-19" />
+      <entry key="S30" value="7.824308913825819E-7" />
+      <entry key="S60" value="8.845518662601195E-4" />
+      <entry key="M2" value="0.029766535038518026" />
+      <entry key="M5" value="0.2607646368763742" />
+      <entry key="M10" value="0.6545732232693512" />
+      <entry key="M15" value="1.0073000333517181" />
+      <entry key="M30" value="1.995267822589516" />
+      <entry key="H1" value="4.985522106354343" />
+      <entry key="H2" value="14.503041401106078" />
+      <entry key="H4" value="32.0439150733799" />
+      <entry key="D1" value="74.66889204773697" />
+      <entry key="W1" value="88.40124314623532" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.7845861852168665" />
-      <entry key="MS500" value="1.036117584969813" />
-      <entry key="S2" value="1.827105888170594" />
-      <entry key="S5" value="2.398300552873865" />
-      <entry key="S10" value="2.6707851840927335" />
-      <entry key="S30" value="2.886533402861116" />
-      <entry key="S60" value="2.9982501850046237" />
-      <entry key="M2" value="3.235040516355119" />
-      <entry key="M5" value="5.585679735020993" />
-      <entry key="M10" value="14.568023831848475" />
-      <entry key="M15" value="24.91048124479095" />
-      <entry key="M30" value="53.3980664301188" />
-      <entry key="H1" value="110.07880854713764" />
-      <entry key="H2" value="248.3198673101592" />
-      <entry key="H4" value="498.0864039884543" />
-      <entry key="D1" value="1159.8023724161214" />
-      <entry key="W1" value="1388.1029521308026" />
+      <entry key="MS100" value="0.49098272482875593" />
+      <entry key="MS500" value="1.2533551093376702" />
+      <entry key="S2" value="2.7248079175819084" />
+      <entry key="S5" value="4.7023951008388964" />
+      <entry key="S10" value="6.485692151283319" />
+      <entry key="S30" value="8.538162109274776" />
+      <entry key="S60" value="9.225122563607307" />
+      <entry key="M2" value="9.688327246194492" />
+      <entry key="M5" value="11.53992743785092" />
+      <entry key="M10" value="17.63344928527729" />
+      <entry key="M15" value="25.934325274467145" />
+      <entry key="M30" value="52.58659389370196" />
+      <entry key="H1" value="108.24509441456927" />
+      <entry key="H2" value="243.93847462569042" />
+      <entry key="H4" value="493.4521497803741" />
+      <entry key="D1" value="1167.706591885438" />
+      <entry key="W1" value="1402.7157237176598" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -166,6 +164,8 @@
       <workItem from="1783263062828" duration="3550000" />
       <workItem from="1783512727873" duration="11845000" />
       <workItem from="1783616378144" duration="285000" />
+      <workItem from="1783657644857" duration="6602000" />
+      <workItem from="1783670756278" duration="2501000" />
     </task>
     <task id="LOCAL-00001" summary="exported the linearergession pipeline and tested the pipeline through flask route">
       <option name="closed" value="true" />
@@ -175,11 +175,30 @@
       <option name="project" value="LOCAL" />
       <updated>1783184510800</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Trained and exported lasso and ridge regression model pipelines">
+      <option name="closed" value="true" />
+      <created>1783658579032</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783658579032</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exported the linearergession pipeline and tested the pipeline through flask route" />
