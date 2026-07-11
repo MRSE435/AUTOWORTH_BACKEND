@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93ac9d36-091f-4769-ad68-4580bedd2005" name="Changes" comment="Trained and exported lasso and ridge regression model pipelines">
+    <list default="true" id="93ac9d36-091f-4769-ad68-4580bedd2005" name="Changes" comment="CREATED API IN PYTHON FLASK TO SEND CHART DATA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/model_testing.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randommodel.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/randommodel.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,61 +44,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.064744047773165" />
-      <entry key="MS500" value="1.711788851519363" />
-      <entry key="S2" value="2.9785883294247726" />
-      <entry key="S5" value="4.9293056601478575" />
-      <entry key="S10" value="6.6690095686774695" />
-      <entry key="S30" value="8.627813740667172" />
-      <entry key="S60" value="9.273990050807061" />
-      <entry key="M2" value="9.68609145329996" />
-      <entry key="M5" value="11.296816903055532" />
-      <entry key="M10" value="16.993507443956222" />
-      <entry key="M15" value="24.939892293509974" />
-      <entry key="M30" value="50.60151534492996" />
-      <entry key="H1" value="103.26951282337743" />
-      <entry key="H2" value="229.44766657656487" />
-      <entry key="H4" value="461.42169423289806" />
-      <entry key="D1" value="1093.0434633049774" />
-      <entry key="W1" value="1314.315481888232" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0002240331743923" />
+      <entry key="S2" value="1.1223427062996794" />
+      <entry key="S5" value="1.4315501116012581" />
+      <entry key="S10" value="1.6569247381901813" />
+      <entry key="S30" value="1.8701274248807784" />
+      <entry key="S60" value="2.0438549807621613" />
+      <entry key="M2" value="3.753487631374358" />
+      <entry key="M5" value="12.705892019435202" />
+      <entry key="M10" value="22.77417146432312" />
+      <entry key="M15" value="28.623637224031246" />
+      <entry key="M30" value="38.22839124320457" />
+      <entry key="H1" value="50.32740846317367" />
+      <entry key="H2" value="88.71343339237703" />
+      <entry key="H4" value="232.99978574287334" />
+      <entry key="D1" value="1014.8762203855903" />
+      <entry key="W1" value="1391.2892523219564" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.5216791604417665E-92" />
-      <entry key="S5" value="2.294435913211382E-37" />
-      <entry key="S10" value="4.790027049204817E-19" />
-      <entry key="S30" value="7.824308913825819E-7" />
-      <entry key="S60" value="8.845518662601195E-4" />
-      <entry key="M2" value="0.029766535038518026" />
-      <entry key="M5" value="0.2607646368763742" />
-      <entry key="M10" value="0.6545732232693512" />
-      <entry key="M15" value="1.0073000333517181" />
-      <entry key="M30" value="1.995267822589516" />
-      <entry key="H1" value="4.985522106354343" />
-      <entry key="H2" value="14.503041401106078" />
-      <entry key="H4" value="32.0439150733799" />
-      <entry key="D1" value="74.66889204773697" />
-      <entry key="W1" value="88.40124314623532" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="7.565755927473849E-143" />
+      <entry key="S60" value="8.698135390687964E-72" />
+      <entry key="M2" value="2.949260142955722E-36" />
+      <entry key="M5" value="6.136336626885319E-15" />
+      <entry key="M10" value="7.915739561130245E-8" />
+      <entry key="M15" value="1.943730892384494E-5" />
+      <entry key="M30" value="0.0060736259242205265" />
+      <entry key="H1" value="0.18186510376147427" />
+      <entry key="H2" value="2.2022601288070076" />
+      <entry key="H4" value="12.01562165992028" />
+      <entry key="D1" value="64.80477309967426" />
+      <entry key="W1" value="89.06339090303987" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.49098272482875593" />
-      <entry key="MS500" value="1.2533551093376702" />
-      <entry key="S2" value="2.7248079175819084" />
-      <entry key="S5" value="4.7023951008388964" />
-      <entry key="S10" value="6.485692151283319" />
-      <entry key="S30" value="8.538162109274776" />
-      <entry key="S60" value="9.225122563607307" />
-      <entry key="M2" value="9.688327246194492" />
-      <entry key="M5" value="11.53992743785092" />
-      <entry key="M10" value="17.63344928527729" />
-      <entry key="M15" value="25.934325274467145" />
-      <entry key="M30" value="52.58659389370196" />
-      <entry key="H1" value="108.24509441456927" />
-      <entry key="H2" value="243.93847462569042" />
-      <entry key="H4" value="493.4521497803741" />
-      <entry key="D1" value="1167.706591885438" />
-      <entry key="W1" value="1402.7157237176598" />
+      <entry key="MS100" value="3.1018676664387585E-12" />
+      <entry key="MS500" value="0.004992751627903374" />
+      <entry key="S2" value="0.2862980216660769" />
+      <entry key="S5" value="0.7997460337359799" />
+      <entry key="S10" value="1.2267017838197616" />
+      <entry key="S30" value="1.6879241274387273" />
+      <entry key="S60" value="1.9461934518575525" />
+      <entry key="M2" value="3.7009415150853804" />
+      <entry key="M5" value="12.680006457862289" />
+      <entry key="M10" value="22.756991811129538" />
+      <entry key="M15" value="28.609741502265656" />
+      <entry key="M30" value="38.224704862021056" />
+      <entry key="H1" value="50.50272299118314" />
+      <entry key="H2" value="90.91042948798895" />
+      <entry key="H4" value="245.00869909258748" />
+      <entry key="D1" value="1079.6757707661964" />
+      <entry key="W1" value="1480.3516057498189" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -165,7 +164,8 @@
       <workItem from="1783512727873" duration="11845000" />
       <workItem from="1783616378144" duration="285000" />
       <workItem from="1783657644857" duration="6602000" />
-      <workItem from="1783670756278" duration="2501000" />
+      <workItem from="1783670756278" duration="8567000" />
+      <workItem from="1783747830960" duration="5721000" />
     </task>
     <task id="LOCAL-00001" summary="exported the linearergession pipeline and tested the pipeline through flask route">
       <option name="closed" value="true" />
@@ -183,7 +183,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783658579032</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="trained and exported xgboost model after hyperparameter tuning">
+      <option name="closed" value="true" />
+      <created>1783673541107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783673541113</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CREATED API IN PYTHON FLASK TO SEND CHART DATA">
+      <option name="closed" value="true" />
+      <created>1783686929017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783686929018</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +219,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exported the linearergession pipeline and tested the pipeline through flask route" />
     <MESSAGE value="Trained and exported lasso and ridge regression model pipelines" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trained and exported lasso and ridge regression model pipelines" />
+    <MESSAGE value="trained and exported xgboost model after hyperparameter tuning" />
+    <MESSAGE value="CREATED API IN PYTHON FLASK TO SEND CHART DATA" />
+    <option name="LAST_COMMIT_MESSAGE" value="CREATED API IN PYTHON FLASK TO SEND CHART DATA" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

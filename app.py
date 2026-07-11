@@ -29,5 +29,19 @@ def chart_data():
     data = df[["km_driven", "selling_price"]].sample(500,random_state=42).to_dict(orient="records")
 
     return jsonify(data)
+
+
+@app.route("/data-car_name")
+def car_data():
+    rawdf = pd.read_csv("car.csv")
+    print(rawdf["car_name"].nunique())
+    print(rawdf.shape)
+    print(len(rawdf))
+    data = rawdf[['car_name']].drop_duplicates().to_dict(orient="records")
+
+    return jsonify(data)
+
+
+
 if __name__ == '__main__':
     app.run()
