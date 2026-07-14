@@ -47,7 +47,8 @@ def car_data():
 @app.route("/data-brand_names")
 def brand_data():
     rawdf = pd.read_csv("car.csv")
-    data = rawdf[['brand']].drop_duplicates().to_dict(orient="records")
+    unique_brands = rawdf['brand'].dropna().unique()
+    data = [{"value": brand, "label": brand} for brand in unique_brands]
 
     return jsonify(data)
 
@@ -55,7 +56,8 @@ def brand_data():
 @app.route("/data-model_names")
 def model_data():
     rawdf = pd.read_csv("car.csv")
-    data = rawdf[['model']].drop_duplicates().to_dict(orient="records")
+    unique_models = rawdf['model'].dropna().unique()
+    data = [{"value": model, "label": model} for model in unique_models]
 
     return jsonify(data)
 
