@@ -3,9 +3,10 @@ import joblib
 import pandas as pd
 import numpy as np
 from flask_cors import CORS
+import json
 app = Flask(__name__)
 CORS(app)
-pipeline = joblib.load('xgboostmodel_tuned.pkl')
+pipeline = joblib.load('./TrainedModels/xgboostmodel_tuned.pkl')
 @app.route('/')
 def hello_world():  # put application's code here
     return 'Hello World!'
@@ -60,6 +61,15 @@ def model_data():
     data = [{"value": model, "label": model} for model in unique_models]
 
     return jsonify(data)
+
+
+@app.route("/data-feature-importance")
+def feature_importance():
+    with open("feature_importance.json", "r") as f:
+        data = json.load(f)
+
+    return jsonify(data)
+
 
 if __name__ == '__main__':
     app.run()

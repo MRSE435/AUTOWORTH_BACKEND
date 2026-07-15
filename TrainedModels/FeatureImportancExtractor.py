@@ -7,10 +7,11 @@ if os.path.exists("feature_importance.json"):
         all_importances = json.load(f)
 else:
     all_importances = {}
-pipeline = joblib.load("randommodel.pkl")
+pipeline = joblib.load("lasssomodel.pkl")
 
 feature_names = pipeline.named_steps['preprocessor'].get_feature_names_out()
-values = pipeline.named_steps['model'].feature_importances_
+print(feature_names[:30])
+values = pipeline.named_steps['model'].coef_
 
 df = pd.DataFrame({'feature': feature_names, 'value': values})
 df['abs_value'] = df['value'].abs()
@@ -23,7 +24,7 @@ aggregated = {}
 
 # Step 1: for EACH onehot column, find every feature that belongs to it
 for col in onehot_columns:
-    prefix = f"onehot__{col}_"
+    prefix = f"Onehotencoder__{col}_"
     matching_rows = df[df['feature'].str.startswith(prefix)]
     aggregated[col] = matching_rows['abs_value'].sum()
 
@@ -33,9 +34,10 @@ for col in numeric_columns:
     aggregated[col] = matching_rows['abs_value'].sum()
 
 result = pd.Series(aggregated).sort_values(ascending=False)
+result = result / result.sum() * 100
 result=result.reset_index()
 result.columns=["label","value"]
-all_importances["RandomForest"]=json_data=result.to_dict(orient="records")
+all_importances["Lassor"]=json_data=result.to_dict(orient="records")
 print(all_importances)
 with open("feature_importance.json", "w") as f:
     json.dump(all_importances, f,indent=4)
