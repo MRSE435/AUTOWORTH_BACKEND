@@ -1,0 +1,40 @@
+{
+  "best_model": "xgboost",
+
+  "models": {
+    "linear_regression": {
+      "train_r2": 0.9154,
+      "test_r2": 0.9053,
+      "mae": 116218.35,
+      "prediction": null
+    },
+
+    "ridge": {
+      "train_r2": 0.93,
+      "test_r2": 0.9062,
+      "mae": 118288,
+      "prediction": null
+    },
+
+    "lasso": {
+      "train_r2": 0.86,
+      "test_r2": 0.89,
+      "mae": 123782,
+      "prediction": null
+    },
+
+    "random_forest": {
+      "train_r2": 0.95,
+      "test_r2": 0.93,
+      "mae": 100200,
+      "prediction": null
+    },
+
+    "xgboost": {
+      "train_r2": 0.96,
+      "test_r2": 0.94,
+      "mae": 91985,
+      "prediction": null
+    }
+  }
+} 

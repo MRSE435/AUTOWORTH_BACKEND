@@ -1,3 +1,5 @@
+import copy
+
 from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
@@ -11,16 +13,29 @@ pipeline = joblib.load('./TrainedModels/xgboostmodel_tuned.pkl')
 def hello_world():  # put application's code here
     return 'Hello World!'
 
+models = {
+    "linear_regression": joblib.load("TrainedModels/linearmodel.pkl"),
+    "ridge": joblib.load("TrainedModels/ridgemodel.pkl"),
+    "lasso": joblib.load("TrainedModels/lasssomodel.pkl"),
+    "random_forest": joblib.load("TrainedModels/randommodel.pkl"),
+    "xgboost": joblib.load("TrainedModels/xgboostmodel_tuned.pkl"),
+}
 
+
+with open("predictions.json","r")as f:
+    metadeta = json.load(f)
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
     input_df = pd.DataFrame([data])
 
-    log_price = pipeline.predict(input_df)[0]
-    price = np.expm1(log_price)
+    response=copy.deepcopy(metadeta)
+    for name, pipeline in models.items():
+        log_price = pipeline.predict(input_df)[0]
+        price = np.expm1(log_price)
+        response["models"][name]["prediction"] = round(float(price), 2)
 
-    return jsonify({'predicted_price': round(float(price), 2)})
+    return jsonify(response)
 
 
 
@@ -68,6 +83,14 @@ def feature_importance():
     with open("feature_importance.json", "r") as f:
         data = json.load(f)
 
+    return jsonify(data)
+
+
+
+@app.route("/data-pricecomparison")
+def price_comparison():
+    with open("price_comparison_data.json", "r") as f:
+        data=json.load(f)
     return jsonify(data)
 
 
