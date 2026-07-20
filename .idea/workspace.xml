@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93ac9d36-091f-4769-ad68-4580bedd2005" name="Changes" comment="Retrained all models Project Folder formatted and Features extacted from all models">
-      <change afterPath="$PROJECT_DIR$/feature_importance.json" afterDir="false" />
+    <list default="true" id="93ac9d36-091f-4769-ad68-4580bedd2005" name="Changes" comment="Created an api to send extracetd features fo each model and a python scirpt to extract feature importances from Models">
+      <change afterPath="$PROJECT_DIR$/Jupyter Notebooks/car.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PriceExtraction/Linear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PriceExtraction/car.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PriceExtraction/xgbosot best prams" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/price_comparison_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainedModels/FeatureImportancExtractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrainedModels/FeatureImportancExtractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AllModels/XgboostModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/AllModels/XgboostModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jupyter Notebooks/playground.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Jupyter Notebooks/playground.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelComparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelComparison.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_importance.json" beforeDir="false" afterPath="$PROJECT_DIR$/feature_importance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price_comparison_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/price_comparison_data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,61 +55,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="8.743831126527003E-271" />
-      <entry key="S2" value="3.9293803787235676E-68" />
-      <entry key="S5" value="1.618310731664002E-27" />
-      <entry key="S10" value="6.30078340075038E-14" />
-      <entry key="S30" value="9.240867963262125E-5" />
-      <entry key="S60" value="0.02022948331529795" />
-      <entry key="M2" value="0.3234894163404455" />
-      <entry key="M5" value="2.35292356389244" />
-      <entry key="M10" value="5.812220095076474" />
-      <entry key="M15" value="8.798681958558793" />
-      <entry key="M30" value="17.67493780356843" />
-      <entry key="H1" value="34.595912910018065" />
-      <entry key="H2" value="63.608680864073214" />
-      <entry key="H4" value="117.87728740572047" />
-      <entry key="D1" value="814.0931061641395" />
-      <entry key="W1" value="1584.8105442005515" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000014157520014" />
+      <entry key="S2" value="1.0344942571340325" />
+      <entry key="S5" value="1.2601688519227117" />
+      <entry key="S10" value="1.5249120207960927" />
+      <entry key="S30" value="2.3448861511739496" />
+      <entry key="S60" value="3.40510951313939" />
+      <entry key="M2" value="4.9458930126403775" />
+      <entry key="M5" value="7.608938324229172" />
+      <entry key="M10" value="9.366450434676647" />
+      <entry key="M15" value="10.126911964396722" />
+      <entry key="M30" value="11.111754280146714" />
+      <entry key="H1" value="13.886652212062891" />
+      <entry key="H2" value="28.42751223020118" />
+      <entry key="H4" value="72.66947653545999" />
+      <entry key="D1" value="708.0168365884658" />
+      <entry key="W1" value="1680.3069201768794" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000007285" />
-      <entry key="MS500" value="1.0037367506175463" />
-      <entry key="S2" value="1.2472427290952328" />
-      <entry key="S5" value="1.5718069260783092" />
-      <entry key="S10" value="1.7561791626845686" />
-      <entry key="S30" value="1.9110888176868885" />
-      <entry key="S60" value="1.9644843308257687" />
-      <entry key="M2" value="2.1479878556455567" />
-      <entry key="M5" value="3.125454259119661" />
-      <entry key="M10" value="4.460256737380719" />
-      <entry key="M15" value="5.368943803427162" />
-      <entry key="M30" value="7.274929684990058" />
-      <entry key="H1" value="10.346402912210758" />
-      <entry key="H2" value="15.086776385862903" />
-      <entry key="H4" value="21.393000910276825" />
-      <entry key="D1" value="69.2733325468017" />
-      <entry key="W1" value="119.1095283947199" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="2.8483413862371827E-244" />
+      <entry key="S60" value="1.6889505216582766E-122" />
+      <entry key="M2" value="1.3726446079978994E-61" />
+      <entry key="M5" value="8.036151758818496E-25" />
+      <entry key="M10" value="2.006764552784184E-12" />
+      <entry key="M15" value="2.85449634570717E-8" />
+      <entry key="M30" value="4.2694890555469646E-4" />
+      <entry key="H1" value="0.056597271890453056" />
+      <entry key="H2" value="0.8175563780842102" />
+      <entry key="H4" value="4.506557829617885" />
+      <entry key="D1" value="54.015573261981444" />
+      <entry key="W1" value="120.63344135037384" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.387591530094326E-5" />
-      <entry key="MS500" value="0.14015974049791466" />
-      <entry key="S2" value="0.7144078581599415" />
-      <entry key="S5" value="1.223854163612187" />
-      <entry key="S10" value="1.5406712055070753" />
-      <entry key="S30" value="1.827096597786659" />
-      <entry key="S60" value="1.9403434780487805" />
-      <entry key="M2" value="2.444152328197007" />
-      <entry key="M5" value="5.45492464817006" />
-      <entry key="M10" value="10.2511770648353" />
-      <entry key="M15" value="14.148885188287473" />
-      <entry key="M30" value="24.935829298788967" />
-      <entry key="H1" value="44.93170035958762" />
-      <entry key="H2" value="78.68652854544139" />
-      <entry key="H4" value="139.2622572454423" />
-      <entry key="D1" value="883.3605825284714" />
-      <entry key="W1" value="1703.9186094109018" />
+      <entry key="MS100" value="0.5105060628535966" />
+      <entry key="MS500" value="0.8741797639993107" />
+      <entry key="S2" value="0.999642641160252" />
+      <entry key="S5" value="1.2412966919979413" />
+      <entry key="S10" value="1.5103604199747647" />
+      <entry key="S30" value="2.2849723709160688" />
+      <entry key="S60" value="3.3153412066951895" />
+      <entry key="M2" value="4.862652744757133" />
+      <entry key="M5" value="7.556277627016373" />
+      <entry key="M10" value="9.334717193533292" />
+      <entry key="M15" value="10.104275832057846" />
+      <entry key="M30" value="11.099999367181903" />
+      <entry key="H1" value="13.936268602329545" />
+      <entry key="H2" value="29.23884029825227" />
+      <entry key="H4" value="77.16899172765974" />
+      <entry key="D1" value="762.0260817105825" />
+      <entry key="W1" value="1800.9385908773477" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -113,39 +121,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.FeatureImportancExtractor.executor": "Run",
-    "Python.Lasso.executor": "Run",
-    "Python.Linear.executor": "Run",
-    "Python.RandomForest.executor": "Run",
-    "Python.Ridge.executor": "Run",
-    "Python.XgboostModel.executor": "Run",
-    "Python.app.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/owais/PycharmProjects/AUTOWORTH_BACKEND",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.FeatureImportancExtractor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Lasso.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Linear.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RandomForest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ridge.executor&quot;: &quot;Run&quot;,
+    &quot;Python.XgboostModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/owais/PycharmProjects/AUTOWORTH_BACKEND/PriceExtraction&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/PriceExtraction" />
       <recent name="$PROJECT_DIR$/TrainedModels" />
+      <recent name="$PROJECT_DIR$/Jupyter Notebooks" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/AllModels" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -223,7 +233,13 @@
       <workItem from="1783931461861" duration="5182000" />
       <workItem from="1784001901785" duration="12107000" />
       <workItem from="1784028044789" duration="12580000" />
-      <workItem from="1784072490621" duration="3839000" />
+      <workItem from="1784072490621" duration="12769000" />
+      <workItem from="1784250265985" duration="2580000" />
+      <workItem from="1784281696866" duration="602000" />
+      <workItem from="1784311044397" duration="973000" />
+      <workItem from="1784429979986" duration="3906000" />
+      <workItem from="1784452345194" duration="11681000" />
+      <workItem from="1784513536778" duration="4986000" />
     </task>
     <task id="LOCAL-00001" summary="exported the linearergession pipeline and tested the pipeline through flask route">
       <option name="closed" value="true" />
@@ -281,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784040743176</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created an api to send extracetd features fo each model and a python scirpt to extract feature importances from Models">
+      <option name="closed" value="true" />
+      <created>1784078221970</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1784078221970</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +330,8 @@
     <MESSAGE value="CREATED API IN PYTHON FLASK TO SEND CAR NAMES" />
     <MESSAGE value="CREATED API IN PYTHON FLASK TO SEND inititial data rtequired bu combobox" />
     <MESSAGE value="Retrained all models Project Folder formatted and Features extacted from all models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrained all models Project Folder formatted and Features extacted from all models" />
+    <MESSAGE value="Created an api to send extracetd features fo each model and a python scirpt to extract feature importances from Models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created an api to send extracetd features fo each model and a python scirpt to extract feature importances from Models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,12 +350,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$Lasso.coverage" NAME="Lasso Coverage Results" MODIFIED="1784035237377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllModels" />
-    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$Linear.coverage" NAME="Linear Coverage Results" MODIFIED="1784073319061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllModels" />
-    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$Ridge.coverage" NAME="Ridge Coverage Results" MODIFIED="1784035457201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllModels" />
-    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$XgboostModel.coverage" NAME="XgboostModel Coverage Results" MODIFIED="1784037517246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllModels" />
-    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$app.coverage" NAME="app Coverage Results" MODIFIED="1784076893372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$FeatureImportancExtractor.coverage" NAME="FeatureImportancExtractor Coverage Results" MODIFIED="1784076587035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TrainedModels" />
-    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$RandomForest.coverage" NAME="RandomForest Coverage Results" MODIFIED="1784037310914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AllModels" />
+    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$Linear.coverage" NAME="Linear Coverage Results" MODIFIED="1784311451134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PriceExtraction" />
+    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$Lasso.coverage" NAME="Lasso Coverage Results" MODIFIED="1784528699398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PriceExtraction" />
+    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$Ridge.coverage" NAME="Ridge Coverage Results" MODIFIED="1784528368161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PriceExtraction" />
+    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$app.coverage" NAME="app Coverage Results" MODIFIED="1784096638980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$XgboostModel.coverage" NAME="XgboostModel Coverage Results" MODIFIED="1784459991592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PriceExtraction" />
+    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$FeatureImportancExtractor.coverage" NAME="FeatureImportancExtractor Coverage Results" MODIFIED="1784252154180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AUTOWORTH_BACKEND$RandomForest.coverage" NAME="RandomForest Coverage Results" MODIFIED="1784462104531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PriceExtraction" />
   </component>
 </project>

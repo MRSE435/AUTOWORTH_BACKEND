@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split, RandomizedSearchCV, KFold
 from sklearn.metrics import r2_score, mean_absolute_error
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
+from sklearn.metrics import root_mean_squared_error
 from xgboost import XGBRegressor
 
 # ---------- Load data ----------
@@ -21,7 +22,7 @@ X_train, X_test, y_train_log, y_test_log = train_test_split(
 tf1 = ColumnTransformer([
     ("Onehotencoder", OneHotEncoder(sparse_output=False, handle_unknown="ignore"),
      ["car_name", "brand", "model", "fuel_type", "seller_type","transmission_type"]),
-    ("Logtransformer", FunctionTransformer(np.log1p,feature_names_out="one-to-one"), ["km_driven"]),
+    ("Logtransformer", FunctionTransformer(np.log1p,feature_names_out="one-to-one" ), ["km_driven"]),
     ("StandardScaler", StandardScaler(), ["vehicle_age", "engine", "max_power", "mileage"]),
 ])
 
@@ -72,6 +73,7 @@ y_test_price = np.expm1(y_test_log)
 print("\n--- Final tuned XGBoost ---")
 print("R2 train:", round(r2_score(y_train_price, train_pred), 4))
 print("R2 test:", round(r2_score(y_test_price, test_pred), 4))
+print("RMSE-test",round(root_mean_squared_error(y_test_price, test_pred), 4))
 print("MAE:", round(mean_absolute_error(y_test_price, test_pred), 2))
 
 

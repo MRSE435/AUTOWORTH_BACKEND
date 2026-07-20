@@ -94,5 +94,10 @@ def price_comparison():
     return jsonify(data)
 
 
+@app.route("/data-tabledata")
+def table_data():
+    with open("model_comparison.json", "r") as f:
+        data=json.load(f)
+    return jsonify(data)
 if __name__ == '__main__':
     app.run()

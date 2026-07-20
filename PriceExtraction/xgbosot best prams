@@ -1,0 +1,10 @@
+Best params: {'model__subsample': 0.9,
+'model__reg_lambda': 20,
+ 'model__reg_alpha': 0.01,
+  'model__n_estimators': 1000,
+  'model__min_child_weight': 1,
+  'model__max_depth': 6,
+  'model__learning_rate': 0.07,
+   'model__gamma': 0,
+   'model__colsample_bytree': 0.4,
+   'model__colsample_bylevel': 0.4}

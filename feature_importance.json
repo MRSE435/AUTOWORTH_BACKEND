@@ -1,5 +1,5 @@
 {
-    "Xgboost": [
+    "XGBoost": [
         {
             "label": "car_name",
             "value": 40.90361785888672
